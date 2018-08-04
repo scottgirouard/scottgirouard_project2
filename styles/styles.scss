@@ -7,17 +7,35 @@
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    width: 75%;
+    width: 70%;
 }
 
-header {
-    // width: 100%;
-    // background-image: url(/restaurant/assets/image-1.jpeg);
+.flexContainer {
+    display: flex;
 }
+
+// SECTION TWO : About US STYLES ***
 
 h2 {
-   
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    text-align: center;
 }
 
-.titleWhite {
+.aboutUsGallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 50%;
+}
+
+.aboutUsTextCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.largerParagraph {
+    width: 50%;
 }

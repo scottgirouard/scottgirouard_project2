@@ -134,7 +134,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   text-transform: uppercase; }
 
 h2, .titleWhite {
@@ -144,11 +144,12 @@ h2, .titleWhite {
   color: black; }
 
 .titleWhite {
-  color: white; }
+  color: white;
+  font-weight: 400; }
 
 a, .blogLinks {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   text-decoration: none;
   text-transform: uppercase; }
@@ -163,7 +164,10 @@ li {
   list-style-type: none; }
 
 button {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white; }
 
 h4 {
   font-family: 'Raleway', sans-serif;
@@ -225,10 +229,108 @@ header {
   background-image: url(../restaurant/assets/image-1.jpeg);
   background-size: cover; }
 
-header h1 {
+header h2, header .titleWhite {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 10px 10px 10px 0; }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 10px 0 10px 10px;
+  margin-top: 20px; }
+
+nav a, nav .blogLinks {
+  padding: 30px; }
+
+h1 {
+  padding-top: 24%; }
+
+.title {
   margin: 0; }
+
+h4 {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 12px; }
+
+button {
+  background: red; }
 
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  width: 75%; }
+  width: 70%; }
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+h2, .titleWhite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 60px;
+  text-align: center; }
+
+.aboutUsGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  width: 50%; }
+
+.aboutUsTextCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right; }
+
+.largerParagraph {
+  width: 50%; }
