@@ -7,7 +7,7 @@
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    width: 70%;
+    width: 75%;
 }
 
 .flexContainer {
@@ -23,19 +23,42 @@ h2 {
     text-align: center;
 }
 
+.largerParagraph p {
+    display: flex;
+    flex-direction: column;
+    // justify-content: left;
+}
+
 .aboutUsGallery {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: left;
-    width: 50%;
+    float: left;
+    padding: 20px;
+    align-content: space-between;
+}
+
+.aboutUsGallery {
+    // display: flex;
+    align-content: center;
+    // padding: 20px;
+    width: 33%;
+    height: 33%;
+}
+
+.aboutUsGallery h3 {
+    text-align: center;
 }
 
 .aboutUsTextCard {
     display: flex;
-    flex-direction: row;
-    justify-content: right;
+    justify-content: center;
+    float: right;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
 }
 
 .largerParagraph {
-    width: 50%;
+    text-align: center;
 }
