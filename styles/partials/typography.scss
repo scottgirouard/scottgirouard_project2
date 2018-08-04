@@ -86,6 +86,15 @@ p {
     font-weight: 800;
 }
 
+.footerParagraph {
+    @extend p;
+    font-family: 'Raleway', sans-serif;
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    // color: white;
+}
+
 h6 {
     font-family: 'Lora', serif;
     font-size: 10px;
@@ -99,13 +108,20 @@ i {
 
 .footerSvg {
     @extend i;
-    font-size: 8px;
-    color: red;
+    font-size: 12px;
+    // color: white;
 }
 
 strong {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+}
+
+h5 {
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    // color: white;
+    font-weight: 400;
 }
 
 

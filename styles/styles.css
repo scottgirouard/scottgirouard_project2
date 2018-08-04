@@ -177,7 +177,7 @@ h3 {
   text-transform: uppercase;
   font-size: 15px; }
 
-p, .largerParagraph, .servicesParagraph, .blogParagraph {
+p, .largerParagraph, .servicesParagraph, .blogParagraph, .footerParagraph {
   font-family: 'Lora', serif;
   font-size: 13px; }
 
@@ -192,6 +192,12 @@ p, .largerParagraph, .servicesParagraph, .blogParagraph {
   font-size: 13px;
   font-weight: 800; }
 
+.footerParagraph {
+  font-family: 'Raleway', sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase; }
+
 h6 {
   font-family: 'Lora', serif;
   font-size: 10px;
@@ -201,12 +207,16 @@ i, .footerSvg {
   font-size: 26px; }
 
 .footerSvg {
-  font-size: 8px;
-  color: red; }
+  font-size: 12px; }
 
 strong {
   font-family: 'Raleway', sans-serif;
   font-size: 16px; }
+
+h5 {
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  font-weight: 400; }
 
 header {
   background-color: white;
