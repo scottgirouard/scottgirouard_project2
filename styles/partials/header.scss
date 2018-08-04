@@ -2,7 +2,9 @@ header {
     background-color: $primaryColor;
     height: 100vh;
     color: white;
-    font-size: 90px;
+    background-image: url(../restaurant/assets/image-1.jpeg);
+    // position: absolute;
+    background-size: cover;
 }
 
 header h1 {

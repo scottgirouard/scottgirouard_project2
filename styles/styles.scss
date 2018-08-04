@@ -3,3 +3,21 @@
 @import "partials/typography.scss";
 @import "partials/header.scss";
 @import "partials/footer.scss";
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 75%;
+}
+
+header {
+    // width: 100%;
+    // background-image: url(/restaurant/assets/image-1.jpeg);
+}
+
+h2 {
+   
+}
+
+.titleWhite {
+}

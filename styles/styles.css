@@ -16,10 +16,10 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-a:focus {
+a:focus, .blogLinks:focus {
   outline: thin dotted; }
 
-a:active, a:hover {
+a:active, .blogLinks:active, a:hover, .blogLinks:hover {
   outline: 0; }
 
 h1 {
@@ -132,11 +132,93 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+  text-transform: uppercase; }
+
+h2, .titleWhite {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: black; }
+
+.titleWhite {
+  color: white; }
+
+a, .blogLinks {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.blogLinks {
+  font-family: 'Raleway', sans-serif;
+  font-size: 8px;
+  color: #da331d;
+  font-weight: 800; }
+
+li {
+  list-style-type: none; }
+
+button {
+  font-family: 'Raleway', sans-serif; }
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px; }
+
+p, .largerParagraph, .servicesParagraph, .blogParagraph {
+  font-family: 'Lora', serif;
+  font-size: 13px; }
+
+.largerParagraph {
+  font-size: 15px; }
+
+.servicesParagraph {
+  font-size: 13px; }
+
+.blogParagraph {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 800; }
+
+h6 {
+  font-family: 'Lora', serif;
+  font-size: 10px;
+  font-style: italic; }
+
+i, .footerSvg {
+  font-size: 26px; }
+
+.footerSvg {
+  font-size: 8px;
+  color: red; }
+
+strong {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px; }
+
 header {
-  background-color: #745089;
+  background-color: white;
   height: 100vh;
   color: white;
-  font-size: 90px; }
+  background-image: url(../restaurant/assets/image-1.jpeg);
+  background-size: cover; }
 
 header h1 {
   margin: 0; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 75%; }
