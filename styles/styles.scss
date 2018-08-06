@@ -84,30 +84,32 @@ h2 {
 
 .services {
     display: flex;
+    flex-direction: column;
+}
+
+.services h2 {
+    padding: 60px 0 60px 0;
+}
+
+.servicesParagraph {
+    display: flex;
+}
+
+.servicesTextCard {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-.servicesTextCard {
-    display: flex;
-    // flex-direction: row;
     width: 40%;
-}
-
-// p.servicesParagraph {
-//     text-align: center;
-//     align-content: center;
-// }
-
-.servicesTextCard {
-    display: flex;
     flex-wrap: wrap;
 }
 
 .services img {
     display: flex;
+    flex-direction: column;
     width: 50%;
+}
+
+.servicesContainer {
+    display: flex;
 }
 
 // SECTION FIVE : Reviews Styles ***
@@ -145,12 +147,15 @@ h2 {
 
 .events {
     display: flex;
-    width: 33%;
-    // flex-direction: row;
+    flex-direction: column;
 }
 
 .events h2 {
     padding: 50px;
+}
+
+.eventContainer {
+    display: flex;
 }
 
 .eventImages {
@@ -174,6 +179,16 @@ h2 {
 .question form {
     display: flex;
     justify-content: center;
+}
+
+.question button {
+    width: 15%;
+    background-color: rgb(218,51,29);
+    align-content: center;
+    margin: 3% 42% 10% 42%;
+    padding: 12px;
+    border-radius: 34%;
+    border: none;
 }
 
 // SECTION EIGHT : Achievements Styles ***

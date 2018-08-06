@@ -166,8 +166,9 @@ li {
 button {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: white; }
+  letter-spacing: 2.5px;
+  color: white;
+  font-size: 13px; }
 
 h4 {
   font-family: 'Raleway', sans-serif;
@@ -407,25 +408,28 @@ h2, .titleWhite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.services h2, .services .titleWhite {
+  padding: 60px 0 60px 0; }
+
+.servicesParagraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.servicesTextCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-  align-content: center; }
-
-.servicesTextCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40%; }
-
-.servicesTextCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 40%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
@@ -433,7 +437,16 @@ h2, .titleWhite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 50%; }
+
+.servicesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .reviews {
   background-color: #2a2a2a;
@@ -471,10 +484,18 @@ h2, .titleWhite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 33%; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .events h2, .events .titleWhite {
   padding: 50px; }
+
+.eventContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .eventImages {
   display: -webkit-box;
@@ -501,6 +522,16 @@ h2, .titleWhite {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+.question button {
+  width: 15%;
+  background-color: #da331d;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin: 3% 42% 10% 42%;
+  padding: 12px;
+  border-radius: 34%;
+  border: none; }
 
 .achievementsSection {
   background-color: #e5bf4b;
