@@ -7,7 +7,7 @@
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    width: 75%;
+    width: 70%;
 }
 
 .flexContainer {
@@ -19,7 +19,7 @@
 h2 {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 38px;
     text-align: center;
 }
 
@@ -59,6 +59,86 @@ h2 {
     width: 33%;
 }
 
-.largerParagraph {
-    text-align: center;
+// SECTION THREE : Welcome To Restaurant Styles ***
+
+.welcome {
+    background-color: $primaryBackground;
+    display: flex;
+    height: 360px;
 }
+
+.welcomeToRestaurant p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 30px;
+}
+
+.largerParagraph {
+    justify-content: center;
+}
+
+// SECTION FOUR : Services Styles ***
+
+p.servicesParagraph {
+    text-align: center;
+    align-content: center;
+    width: 75%;
+}
+
+.servicesTextCard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryImageCard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// SECTION FIVE : Reviews Styles ***
+
+.reviews {
+    background-color: $footerBackground;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleReview {
+    color: $secondaryColor;
+    font-weight: 400;
+}
+
+.reviews img {
+    display: flex;
+    align-content: center;
+    margin-left: 43%;
+}
+
+.reviews p {
+    text-align: center;
+    width: 63%;
+    color: $secondaryColor;
+    margin-left: 20%;
+    padding-top: 10px;
+}
+
+.reviews h6 {
+    margin-left: 47%;
+}
+
+// SECTION SIX : Events Styles ***
+
+// .events {
+//     display: flex;
+//     // width: 33%;
+//     // flex-direction: row;
+// }
+
+// .eventImages {
+//     display: flex;
+
+//     width: calc((100% - 70%) / 3);
+// }

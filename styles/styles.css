@@ -181,7 +181,7 @@ h3 {
   text-transform: uppercase;
   font-size: 15px; }
 
-p, .largerParagraph, .servicesParagraph, .blogParagraph, .footerParagraph {
+p, .largerParagraph, .servicesParagraph, .blogParagraph, .footerParagraph, .reviewParagraph {
   font-family: 'Lora', serif;
   font-size: 13px; }
 
@@ -189,7 +189,11 @@ p, .largerParagraph, .servicesParagraph, .blogParagraph, .footerParagraph {
   font-size: 15px; }
 
 .servicesParagraph {
-  font-size: 13px; }
+  font-size: 13px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  width: 75%; }
 
 .blogParagraph {
   font-family: 'Raleway', sans-serif;
@@ -202,10 +206,20 @@ p, .largerParagraph, .servicesParagraph, .blogParagraph, .footerParagraph {
   font-weight: 800;
   text-transform: uppercase; }
 
-h6 {
+.reviewParagraph {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #d2cfcf; }
+
+h6, .reviewCredit {
   font-family: 'Lora', serif;
   font-size: 10px;
   font-style: italic; }
+
+.reviewCredit {
+  color: #d2cfcf;
+  font-weight: 400; }
 
 i, .footerSvg {
   font-size: 26px; }
@@ -286,10 +300,14 @@ h4 {
 button {
   background: red; }
 
+footer {
+  background-color: #2a2a2a;
+  height: 100vh; }
+
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  width: 75%; }
+  width: 70%; }
 
 .flexContainer {
   display: -webkit-box;
@@ -304,10 +322,10 @@ h2, .titleWhite {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 38px;
   text-align: center; }
 
-.largerParagraph p, .largerParagraph .largerParagraph, .largerParagraph .servicesParagraph, .largerParagraph .blogParagraph, .largerParagraph .footerParagraph {
+.largerParagraph p, .largerParagraph .largerParagraph, .largerParagraph .servicesParagraph, .largerParagraph .blogParagraph, .largerParagraph .footerParagraph, .largerParagraph .reviewParagraph {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,5 +375,78 @@ h2, .titleWhite {
   align-items: center;
   width: 33%; }
 
+.welcome {
+  background-color: #e5bf4b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 360px; }
+
+.welcomeToRestaurant p, .welcomeToRestaurant .largerParagraph, .welcomeToRestaurant .servicesParagraph, .welcomeToRestaurant .blogParagraph, .welcomeToRestaurant .footerParagraph, .welcomeToRestaurant .reviewParagraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 30px; }
+
 .largerParagraph {
-  text-align: center; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+p.servicesParagraph, .servicesParagraph {
+  text-align: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  width: 75%; }
+
+.servicesTextCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.galleryImageCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews {
+  background-color: #2a2a2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.titleReview {
+  color: #d2cfcf;
+  font-weight: 400; }
+
+.reviews img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin-left: 43%; }
+
+.reviews p, .reviews .largerParagraph, .reviews .servicesParagraph, .reviews .blogParagraph, .reviews .footerParagraph, .reviews .reviewParagraph {
+  text-align: center;
+  width: 63%;
+  color: #d2cfcf;
+  margin-left: 20%;
+  padding-top: 10px; }
+
+.reviews h6, .reviews .reviewCredit {
+  margin-left: 47%; }
