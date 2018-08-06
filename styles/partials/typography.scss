@@ -67,6 +67,14 @@ h3 {
     font-size: 15px;
 }
 
+.servicesTitle {
+    @extend h3;
+    text-align: center;
+    width: 75%;
+}
+
+
+
 p {
     font-family: 'Lora', serif;
     font-size: 13px;
@@ -80,7 +88,7 @@ p {
 
 .servicesParagraph {
     @extend p;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
     align-content: center;
     width: 75%;

@@ -175,11 +175,15 @@ h4 {
   text-transform: uppercase;
   font-weight: 400; }
 
-h3 {
+h3, .servicesTitle {
   font-family: 'Raleway', sans-serif;
   color: black;
   text-transform: uppercase;
   font-size: 15px; }
+
+.servicesTitle {
+  text-align: center;
+  width: 75%; }
 
 p, .largerParagraph, .servicesParagraph, .blogParagraph, .footerParagraph, .reviewParagraph {
   font-family: 'Lora', serif;
@@ -189,7 +193,7 @@ p, .largerParagraph, .servicesParagraph, .blogParagraph, .footerParagraph, .revi
   font-size: 15px; }
 
 .servicesParagraph {
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
   -ms-flex-line-pack: center;
   align-content: center;
@@ -355,7 +359,7 @@ h2, .titleWhite {
   width: 33%;
   height: 33%; }
 
-.aboutUsGallery h3 {
+.aboutUsGallery h3, .aboutUsGallery .servicesTitle {
   text-align: center; }
 
 .aboutUsTextCard {
@@ -399,11 +403,20 @@ h2, .titleWhite {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.servicesTextCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 40%; }
+
 p.servicesParagraph, .servicesParagraph {
   text-align: center;
   -ms-flex-line-pack: center;
-  align-content: center;
-  width: 75%; }
+  align-content: center; }
 
 .servicesTextCard {
   display: -webkit-box;
@@ -412,12 +425,10 @@ p.servicesParagraph, .servicesParagraph {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.galleryImageCard {
+.servicesImageCard {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  display: flex; }
 
 .reviews {
   background-color: #2a2a2a;

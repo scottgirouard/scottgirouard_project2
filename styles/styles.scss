@@ -82,10 +82,15 @@ h2 {
 
 // SECTION FOUR : Services Styles ***
 
+.servicesTextCard {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
 p.servicesParagraph {
     text-align: center;
     align-content: center;
-    width: 75%;
 }
 
 .servicesTextCard {
@@ -93,9 +98,8 @@ p.servicesParagraph {
     flex-wrap: wrap;
 }
 
-.galleryImageCard {
+.servicesImageCard {
     display: flex;
-    flex-wrap: wrap;
 }
 
 // SECTION FIVE : Reviews Styles ***
