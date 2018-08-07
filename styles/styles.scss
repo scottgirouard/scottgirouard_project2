@@ -103,26 +103,27 @@ h2 {
     padding: 60px 0 60px 0;
 }
 
-.servicesParagraph {
+.servicesContainer {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .servicesTextCard {
     display: flex;
     flex-direction: row;
-    width: 40%;
     flex-wrap: wrap;
-}
-
-.services img {
-    display: flex;
-    flex-direction: column;
     width: 50%;
 }
 
-.servicesContainer {
-    display: flex;
+.servicesImgCard {
+    width: 50%;
 }
+
+.services img {
+    width: 100%;
+}
+
 
 // SECTION FIVE : Reviews Styles ***
 
@@ -159,12 +160,11 @@ h2 {
 
 .events {
     display: flex;
-    flex-direction: column;
-
+    flex-direction: column;    
 }
 
 .events h2 {
-    padding: 50px;
+    // padding: 50px;
 }
 
 .eventContainer {
@@ -175,6 +175,16 @@ h2 {
 
 .eventImages {
     flex: 1 1 33%;
+    position: relative;
+    font-size: 0;
+}
+
+.eventTextCard {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .eventImages:nth-child(1) {
@@ -183,6 +193,7 @@ h2 {
 
 .eventImages:nth-child(2) {
     flex: 1 1 33.35%;
+
 }
 
 // SECTION SEVEN : Ask A Question Styles ***

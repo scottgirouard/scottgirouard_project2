@@ -132,6 +132,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+img {
+  max-width: 100%; }
+
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
@@ -517,10 +520,16 @@ h2, .titleWhite {
 .services h2, .services .titleWhite {
   padding: 60px 0 60px 0; }
 
-.servicesParagraph {
+.servicesContainer {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 .servicesTextCard {
   display: -webkit-box;
@@ -530,24 +539,15 @@ h2, .titleWhite {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 40%;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-.services img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 50%; }
 
-.servicesContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.servicesImgCard {
+  width: 50%; }
+
+.services img {
+  width: 100%; }
 
 .reviews {
   background-color: #2a2a2a;
@@ -590,9 +590,6 @@ h2, .titleWhite {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-.events h2, .events .titleWhite {
-  padding: 50px; }
-
 .eventContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,7 +602,16 @@ h2, .titleWhite {
 .eventImages {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 33%;
-  flex: 1 1 33%; }
+  flex: 1 1 33%;
+  position: relative;
+  font-size: 0; }
+
+.eventTextCard {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .eventImages:nth-child(1) {
   -webkit-box-flex: 1;
