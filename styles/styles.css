@@ -323,10 +323,17 @@ h1 {
 h4 {
   margin: 0;
   padding-top: 5px;
-  padding-bottom: 12px; }
+  padding-bottom: 1px; }
 
 button {
-  background: red; }
+  width: 12%;
+  background-color: #da331d;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin: 1% 0 10% 2%;
+  padding: 10px;
+  border-radius: 37%;
+  border: none; }
 
 footer {
   background-color: #2a2a2a;
@@ -420,16 +427,6 @@ footer img {
   display: -ms-flexbox;
   display: flex; }
 
-.navSection button {
-  width: 12%;
-  background-color: #da331d;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  margin: 3% 0 10% 2%;
-  padding: 8px;
-  border-radius: 42%;
-  border: none; }
-
 h2, .titleWhite {
   padding-top: 38px;
   padding-bottom: 30px;
@@ -458,6 +455,9 @@ h2, .titleWhite {
 
 .imgCard {
   width: 50%; }
+
+.imgCard h3, .imgCard .servicesTitle {
+  padding-left: 25px; }
 
 .aboutUsTextCard {
   display: -webkit-box;
@@ -551,7 +551,12 @@ h2, .titleWhite {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 50%; }
+  width: 50%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center; }
 
 .servicesImgCard {
   width: 50%; }
