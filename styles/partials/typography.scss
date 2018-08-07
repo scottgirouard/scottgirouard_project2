@@ -154,8 +154,30 @@ h5 {
     font-weight: 400;
 }
 
+footer h3, h5 {
+    color: $primaryColor;
+    font-weight: 400;
+}
 
+footer p {
+    color: $primaryColor;
+}
 
+footer i {
+    color: $primaryColor;
+}
+
+.socials i {
+    color: rgb(132,132,132);
+}
+
+footer input {
+    color: $primaryColor;
+    font-size: 10px;
+    background-color: rgb(42,42,42);
+    border: 1px solid rgb(210,207,207);
+    padding-left: 7px;
+}
 
 
 

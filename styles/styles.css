@@ -241,6 +241,26 @@ h5 {
   font-size: 13px;
   font-weight: 400; }
 
+footer h3, footer .servicesTitle, h5 {
+  color: white;
+  font-weight: 400; }
+
+footer p, footer .largerParagraph, footer .servicesParagraph, footer .blogParagraph, footer .footerParagraph, footer .reviewParagraph {
+  color: white; }
+
+footer i, footer .footerSvg {
+  color: white; }
+
+.socials i, .socials .footerSvg {
+  color: #848484; }
+
+footer input {
+  color: white;
+  font-size: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #d2cfcf;
+  padding-left: 7px; }
+
 header {
   background-color: white;
   height: 100vh;
@@ -307,7 +327,51 @@ button {
 
 footer {
   background-color: #2a2a2a;
-  height: 100vh; }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: calc((100% / 3) - 30%);
+  height: 100%; }
+
+.footerCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 33.3%; }
+
+footer img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3px;
+  width: 70px;
+  height: 70px; }
+
+.navFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
 
 .wrapper {
   max-width: 1170px;
