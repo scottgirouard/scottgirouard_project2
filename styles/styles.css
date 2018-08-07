@@ -418,17 +418,11 @@ footer img {
   display: flex; }
 
 h2, .titleWhite {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   padding-top: 38px;
+  padding-bottom: 30px;
   text-align: center; }
 
-.largerParagraph p, .largerParagraph .largerParagraph, .largerParagraph .servicesParagraph, .largerParagraph .blogParagraph, .largerParagraph .footerParagraph, .largerParagraph .reviewParagraph {
+.aboutUs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,29 +431,20 @@ h2, .titleWhite {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.weAre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .aboutUsGallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  float: left;
-  padding: 20px;
-  -ms-flex-line-pack: justify;
-  align-content: space-between; }
+  flex-wrap: wrap; }
 
-.aboutUsGallery {
-  -ms-flex-line-pack: center;
-  align-content: center;
-  width: 33%;
-  height: 33%; }
-
-.aboutUsGallery h3, .aboutUsGallery .servicesTitle {
-  text-align: center; }
+.imgCard {
+  width: 50%; }
 
 .aboutUsTextCard {
   display: -webkit-box;
@@ -473,10 +458,18 @@ h2, .titleWhite {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  text-align: center;
   width: 33%; }
+
+.textCard button {
+  width: 30%;
+  background-color: #da331d;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin: 3% 42% 10% 42%;
+  padding: 12px;
+  border-radius: 34%;
+  border: none; }
 
 .welcome {
   background-color: #e5bf4b;
@@ -501,6 +494,16 @@ h2, .titleWhite {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+.viewButton {
+  width: 15%;
+  background-color: #da331d;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin: 3% 42% 10% 42%;
+  padding: 12px;
+  border-radius: 34%;
+  border: none; }
 
 .services {
   display: -webkit-box;
@@ -593,13 +596,26 @@ h2, .titleWhite {
 .eventContainer {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 .eventImages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 33%; }
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 33%;
+  flex: 1 1 33%; }
+
+.eventImages:nth-child(1) {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 33.25%;
+  flex: 1 1 33.25%; }
+
+.eventImages:nth-child(2) {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 33.35%;
+  flex: 1 1 33.35%; }
 
 .question {
   display: -webkit-box;
@@ -690,8 +706,9 @@ h2, .titleWhite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 60px 0 10px 0; }
 
 .blogCards {

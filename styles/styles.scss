@@ -17,37 +17,29 @@
 // SECTION TWO : About US STYLES ***
 
 h2 {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     padding-top: 38px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
-.largerParagraph p {
+.aboutUs {
     display: flex;
     flex-direction: column;
-    // justify-content: left;
+}
+
+.weAre {
+    display: flex;
 }
 
 .aboutUsGallery {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    float: left;
-    padding: 20px;
-    align-content: space-between;
 }
 
-.aboutUsGallery {
-    // display: flex;
-    align-content: center;
-    // padding: 20px;
-    width: 33%;
-    height: 33%;
-}
-
-.aboutUsGallery h3 {
-    text-align: center;
+.imgCard {
+    width: 50%;
 }
 
 .aboutUsTextCard {
@@ -55,8 +47,18 @@ h2 {
     justify-content: center;
     float: right;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     width: 33%;
+}
+
+.textCard button {
+    width: 30%;
+    background-color: rgb(218,51,29);
+    align-content: center;
+    margin: 3% 42% 10% 42%;
+    padding: 12px;
+    border-radius: 34%;
+    border: none;
 }
 
 // SECTION THREE : Welcome To Restaurant Styles ***
@@ -78,6 +80,16 @@ h2 {
 
 .largerParagraph {
     justify-content: center;
+}
+
+.viewButton {
+    width: 15%;
+    background-color: rgb(218,51,29);
+    align-content: center;
+    margin: 3% 42% 10% 42%;
+    padding: 12px;
+    border-radius: 34%;
+    border: none;
 }
 
 // SECTION FOUR : Services Styles ***
@@ -148,6 +160,7 @@ h2 {
 .events {
     display: flex;
     flex-direction: column;
+
 }
 
 .events h2 {
@@ -156,13 +169,20 @@ h2 {
 
 .eventContainer {
     display: flex;
+    flex-direction: row;
 }
 
+
 .eventImages {
-    display: flex;
-    width: 33%;
-    // height: 50%;
-    // width: calc((100% - 70%) / 3);
+    flex: 1 1 33%;
+}
+
+.eventImages:nth-child(1) {
+    flex: 1 1 33.25%;
+}
+
+.eventImages:nth-child(2) {
+    flex: 1 1 33.35%;
 }
 
 // SECTION SEVEN : Ask A Question Styles ***
@@ -233,7 +253,7 @@ h2 {
 .blog h2 {
     display: flex;
     // flex-direction: row;
-    align-content: center;
+    justify-content: center;
     padding: 60px 0 10px 0;
 }
 
