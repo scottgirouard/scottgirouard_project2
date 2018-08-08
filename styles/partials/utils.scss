@@ -3,3 +3,12 @@ $secondaryColor: rgb(210,207,207);
 $primaryOverlay: rgba(42,42,42,0.9);
 $primaryBackground: rgb(229,191,75);
 $footerBackground: rgb(42,42,42);
+
+@mixin bp($point) {
+ @if $point == 980 {
+   @media (max-width: 980px) { @content; }
+ }
+ @else if $point == 890 {
+   @media (max-width: 890px) { @content; }
+ }
+}

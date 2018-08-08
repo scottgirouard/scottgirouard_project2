@@ -3,7 +3,7 @@ footer {
     // height: 100vh;
     display: flex;
     flex-direction: column;
-    // position: absolute;
+    position: relative;
 }
 
 .footerContainer {
@@ -68,4 +68,19 @@ footer img {
     flex-direction: column;
     // right: 0;
     // top: 0;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 15px;
+    right: 0;
+    top: 50%;
+}
+
+.socials i {
+    padding-bottom: 30px;
 }

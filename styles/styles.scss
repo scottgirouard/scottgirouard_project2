@@ -65,7 +65,7 @@ h2 {
     align-content: center;
     margin: 3% 42% 10% 42%;
     padding: 12px;
-    border-radius: 34%;
+    border-radius: 40px;
     border: none;
 }
 
@@ -91,14 +91,14 @@ h2 {
 }
 
 .viewButton {
-    width: 15%;
-    background-color: rgb(218,51,29);
+    background-color: black;
     align-content: center;
     margin: 3% 42% 10% 42%;
     padding: 12px;
-    border-radius: 34%;
+    border-radius: 40px;
     border: none;
 }
+
 
 // SECTION FOUR : Services Styles ***
 
@@ -195,6 +195,12 @@ h2 {
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: rgba(42, 42, 42, 0.9);
+}
+
+.eventTextCard p {
+    text-align: center;
+    color: $primaryColor;
 }
 
 .eventImages:nth-child(1) {
@@ -203,7 +209,6 @@ h2 {
 
 .eventImages:nth-child(2) {
     flex: 1 1 33.35%;
-
 }
 
 // SECTION SEVEN : Ask A Question Styles ***
@@ -223,12 +228,11 @@ h2 {
 }
 
 .question button {
-    width: 15%;
     background-color: rgb(218,51,29);
     align-content: center;
-    margin: 3% 42% 10% 42%;
+    margin: 3% 42% 10% 44%;
     padding: 12px;
-    border-radius: 34%;
+    border-radius: 40px;
     border: none;
 }
 
@@ -288,3 +292,4 @@ h2 {
 .blogCard {
     padding: 10px;
 }
+

@@ -320,6 +320,10 @@ h1 {
 .title {
   margin: 0; }
 
+@media (max-width: 980px) {
+  .headerText {
+    text-align: center; } }
+
 h4 {
   margin: 0;
   padding-top: 5px;
@@ -332,7 +336,7 @@ button {
   align-content: center;
   margin: 1% 0 10% 2%;
   padding: 10px;
-  border-radius: 37%;
+  border-radius: 40px;
   border: none; }
 
 footer {
@@ -343,7 +347,8 @@ footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
 
 .footerContainer {
   display: -webkit-box;
@@ -417,6 +422,28 @@ footer img {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  padding: 15px;
+  right: 0;
+  top: 50%; }
+
+.socials i, .socials .footerSvg {
+  padding-bottom: 30px; }
+
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
@@ -481,7 +508,7 @@ h2, .titleWhite {
   align-content: center;
   margin: 3% 42% 10% 42%;
   padding: 12px;
-  border-radius: 34%;
+  border-radius: 40px;
   border: none; }
 
 .welcome {
@@ -509,13 +536,12 @@ h2, .titleWhite {
   justify-content: center; }
 
 .viewButton {
-  width: 15%;
-  background-color: #da331d;
+  background-color: black;
   -ms-flex-line-pack: center;
   align-content: center;
   margin: 3% 42% 10% 42%;
   padding: 12px;
-  border-radius: 34%;
+  border-radius: 40px;
   border: none; }
 
 .services {
@@ -626,7 +652,12 @@ h2, .titleWhite {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  background-color: rgba(42, 42, 42, 0.9); }
+
+.eventTextCard p, .eventTextCard .largerParagraph, .eventTextCard .servicesParagraph, .eventTextCard .blogParagraph, .eventTextCard .footerParagraph, .eventTextCard .reviewParagraph {
+  text-align: center;
+  color: white; }
 
 .eventImages:nth-child(1) {
   -webkit-box-flex: 1;
@@ -659,13 +690,12 @@ h2, .titleWhite {
   justify-content: center; }
 
 .question button {
-  width: 15%;
   background-color: #da331d;
   -ms-flex-line-pack: center;
   align-content: center;
-  margin: 3% 42% 10% 42%;
+  margin: 3% 42% 10% 44%;
   padding: 12px;
-  border-radius: 34%;
+  border-radius: 40px;
   border: none; }
 
 .achievementsSection {
