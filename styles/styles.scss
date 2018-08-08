@@ -296,6 +296,9 @@ h2 {
     @include bp(1112) {
         display: none;
     }
+    @include bp(1001) {
+        display: none;
+    }
 }
 
 // SECTION EIGHT : Achievements Styles ***
