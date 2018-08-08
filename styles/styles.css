@@ -727,6 +727,9 @@ h2, .titleWhite {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media (max-width: 1112px) {
+    .question {
+      padding: 45px; } }
 
 .question h2, .question .titleWhite {
   padding: 50px; }
@@ -737,7 +740,11 @@ h2, .titleWhite {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  border-bottom: 1px solid #848484; }
+
+.question input {
+  border: none; }
 
 .question button {
   background-color: #da331d;
@@ -747,6 +754,9 @@ h2, .titleWhite {
   padding: 12px;
   border-radius: 40px;
   border: none; }
+  @media (max-width: 1112px) {
+    .question button {
+      display: none; } }
 
 .achievementsSection {
   background-color: #e5bf4b;

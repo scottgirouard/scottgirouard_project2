@@ -245,6 +245,9 @@ h2 {
 .question {
     display: flex;
     flex-direction: column;
+    @include bp(1112) {
+        padding: 45px;
+    }
 }
 
 .question h2 {
@@ -254,6 +257,12 @@ h2 {
 .question form {
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid rgb(132,132,132);
+    
+}
+
+.question input {
+    border: none;
 }
 
 .question button {
@@ -263,6 +272,9 @@ h2 {
     padding: 12px;
     border-radius: 40px;
     border: none;
+    @include bp(1112) {
+        display: none;
+    }
 }
 
 // SECTION EIGHT : Achievements Styles ***
