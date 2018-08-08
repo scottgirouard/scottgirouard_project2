@@ -17,7 +17,10 @@ $footerBackground: rgb(42,42,42);
  @else if $point == 840 {
    @media (max-width: 840px) { @content; }
  }
- @else if $point == 480 {
-   @media (max-width: 480px) { @content; }
+  @else if $point == 700 {
+   @media (max-width: 700px) { @content; }
+ }
+ @else if $point == 500 {
+   @media (max-width: 500px) { @content; }
  }
 }
