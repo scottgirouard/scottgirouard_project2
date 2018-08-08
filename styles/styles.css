@@ -651,6 +651,9 @@ h2, .titleWhite {
   -ms-flex-line-pack: center;
   align-content: center;
   margin-left: 43%; }
+  @media (max-width: 980px) {
+    .reviews img {
+      display: none; } }
 
 .reviews p, .reviews .largerParagraph, .reviews .servicesParagraph, .reviews .blogParagraph, .reviews .footerParagraph, .reviews .reviewParagraph {
   text-align: center;
@@ -670,6 +673,10 @@ h2, .titleWhite {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+@media (max-width: 600px) {
+  .events h2, .events .titleWhite {
+    display: none; } }
 
 .eventContainer {
   display: -webkit-box;
@@ -698,6 +705,9 @@ h2, .titleWhite {
 .eventTextCard p, .eventTextCard .largerParagraph, .eventTextCard .servicesParagraph, .eventTextCard .blogParagraph, .eventTextCard .footerParagraph, .eventTextCard .reviewParagraph {
   text-align: center;
   color: white; }
+  @media (max-width: 1001px) {
+    .eventTextCard p, .eventTextCard .largerParagraph, .eventTextCard .servicesParagraph, .eventTextCard .blogParagraph, .eventTextCard .footerParagraph, .eventTextCard .reviewParagraph {
+      display: none; } }
 
 .eventImages:nth-child(1) {
   -webkit-box-flex: 1;

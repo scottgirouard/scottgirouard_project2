@@ -172,6 +172,9 @@ h2 {
     display: flex;
     align-content: center;
     margin-left: 43%;
+    @include bp(980) {
+        display: none;
+    }
 }
 
 .reviews p {
@@ -194,7 +197,10 @@ h2 {
 }
 
 .events h2 {
-    // padding: 50px;
+    @include bp(600) {
+        display: none;
+    }
+    
 }
 
 .eventContainer {
@@ -221,6 +227,9 @@ h2 {
 .eventTextCard p {
     text-align: center;
     color: $primaryColor;
+    @include bp(1001) {
+        display: none;
+    }
 }
 
 .eventImages:nth-child(1) {
