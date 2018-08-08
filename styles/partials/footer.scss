@@ -11,6 +11,11 @@ footer {
     flex-direction: row;
     height: 100%;
     padding-top: 40px;
+        @include bp(700) {
+        flex-direction: column;
+        align-content: center;
+        padding-left: 20%;
+    }
 }
 
 .footerCard {
@@ -32,11 +37,26 @@ footer {
     span {
         display: flex;
         align-content: center;
+            @include bp(700) {
+        flex-direction: column;
+        align-content: center;
+    }
+    }
+    
+}
+
+.footerCard input {
+        @include bp(700) {
+        width: 100%;
     }
 }
 
 .footerAboutP {
     padding-right: 25px;
+        @include bp(700) {
+        width: 150px;
+        text-align: center;
+    }
 }
 
 .footerGallery {
@@ -49,25 +69,29 @@ footer img {
     padding: 3px;
     width: 70px;
     height: 70px;
+        @include bp(700) {
+        flex-direction: column;
+    }
 }
 
 .navFooter {
     display: flex;
     flex-direction: column;
-    // align-items: flex-end;
+        @include bp(700) {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+.navFooter a {
+        @include bp(1001) {
+        font-size: 12px;
+    }
 }
 
 .footerParagraph {
     text-align: center;
     padding: 10px;
-}
-
-.socials {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    // right: 0;
-    // top: 0;
 }
 
 .socials {
@@ -78,9 +102,15 @@ footer img {
     position: absolute;
     padding: 15px;
     right: 0;
-    top: 50%;
+    top: 30%;
+        @include bp(700) {
+        flex-direction: row;
+        position: relative;
+        justify-content: space-around;
+    }
 }
 
 .socials i {
     padding-bottom: 30px;
 }
+

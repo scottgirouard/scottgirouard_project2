@@ -173,6 +173,9 @@ h2 {
     background-color: $footerBackground;
     display: flex;
     flex-direction: column;
+        @include bp(1001) {
+        padding-bottom: 30px;
+    }
 }
 
 .titleReview {
@@ -199,6 +202,9 @@ h2 {
 
 .reviews h6 {
     margin-left: 47%;
+        @include bp(1001) {
+        display: none;
+    }
 }
 
 // SECTION SIX : Events Styles ***
