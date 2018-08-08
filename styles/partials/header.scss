@@ -64,6 +64,9 @@ button {
     padding: 10px;
     border-radius: 40px;
     border: none;
+    @include bp(1112) {
+    display: none;
+    }
 }
 
 .menu {
@@ -79,3 +82,5 @@ button {
 label[for="toggle"] {
     display: none;
 }
+
+
