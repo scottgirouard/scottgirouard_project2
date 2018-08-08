@@ -33,17 +33,29 @@ h2 {
     display: flex;
         @include bp(1001) {
         flex-direction: column;
-        margin-left: 21%;
+        margin-left: 25%;
     }
 }
 
 .aboutUsGallery {
     display: flex;
     flex-wrap: wrap;
+        @include bp(1001) {
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+    }
 }
 
 .imgCard {
     width: 50%;
+}
+
+.imgCard h3 {
+        @include bp(1001) {
+        justify-content: center;
+        margin-right: 20px;
+    }
 }
 
 .imgCard img {
@@ -252,6 +264,9 @@ h2 {
 
 .question h2 {
     padding: 50px;
+    @include bp(500) {
+        text-align: center;
+    }
 }
 
 .question form {
@@ -305,6 +320,7 @@ h2 {
 
 .achievementsContainer p {
     display: flex;
+    text-align: center;
     justify-content: center;
     padding: 0 30px 10px 30px;
 }
@@ -328,6 +344,10 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     padding: 55px 0 30px 0;
+        @include bp(700) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .blogCard {
