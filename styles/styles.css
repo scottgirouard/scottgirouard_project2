@@ -819,7 +819,9 @@ h2, .titleWhite {
   padding: 50px; }
   @media (max-width: 500px) {
     .question h2, .question .titleWhite {
-      text-align: center; } }
+      font-size: 15px;
+      text-align: center;
+      padding: 20px; } }
 
 .question form {
   display: -webkit-box;
@@ -829,6 +831,9 @@ h2, .titleWhite {
   -ms-flex-pack: center;
   justify-content: center;
   border-bottom: 1px solid #848484; }
+  @media (max-width: 500px) {
+    .question form {
+      font-size: 10px; } }
 
 .question input {
   border: none; }
@@ -844,7 +849,7 @@ h2, .titleWhite {
   @media (max-width: 1112px) {
     .question button {
       display: none; } }
-  @media (max-width: 1001px) {
+  @media (max-width: 500px) {
     .question button {
       display: none; } }
 
