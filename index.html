@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans|Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Restaurant - Project2</title>
@@ -21,8 +22,11 @@
         <nav class"navigation">
 
             <h2 class="titleWhite">restaurant</h2>
-            
-            <ul>
+              
+            <p class="hamburger"><i class="fas fa-bars"></i></p>
+            <li class="exit-responsive"><i class="fas fa-times"></i></li>
+
+            <ul class="menu">
                 <li class="nav__options"><a class="nav__options__link" href="#home">home</a></li>
                 <li class="nav__options"><a class="nav__options__link" href="#menu">menu</a></li>
                 <li class="nav__options"><a class="nav__options__link" href="#blog">blog</a></li>
@@ -325,6 +329,24 @@
         </div>
         <p class="footerParagraph">2018 all rights reserved &copy;</p>
 </footer>
+
+<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+
+<script>
+
+    $(document).ready(function () {
+        $('.hamburger').on('click', function () {
+            // toggle class show on the menu
+            $('.menu').toggleClass('show');
+        });
+
+        $('.exit-responsive').on('click', function () {
+            // toggle class show on the menu
+            $('.menu').toggleClass('show');
+        });
+    });
+
+</script>
 
 </body>
 </html>
