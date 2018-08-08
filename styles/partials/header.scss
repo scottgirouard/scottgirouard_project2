@@ -73,6 +73,11 @@ button {
     }
 }
 
+button:hover {
+    color: black;
+    font-weight: 800;
+}
+
 .menu {
     @include bp(840) {
     display: none;
