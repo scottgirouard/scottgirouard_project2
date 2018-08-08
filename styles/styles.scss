@@ -317,6 +317,9 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 70px;
+    @include bp(500) {
+        flex-direction: column;
+    }
 }
 
 .achievementsContainer i {
